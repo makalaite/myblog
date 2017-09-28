@@ -1,11 +1,10 @@
-
 @extends('layouts.template')
 
-@section('title', 'Add New Blog Post')
 
 @section('content')
-    <h1>Add New Blog Post</h1>
+    <h1>Edit New Blog Post</h1>
     <div class="col-sm-8 col-sm-offset-2">
+        {{dd($post)}}
         <form action="{{ route('app.posts.store') }}" method="post">
             {{ csrf_field() }}
 

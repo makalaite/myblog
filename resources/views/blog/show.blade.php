@@ -7,15 +7,15 @@
         <form>
 
             <div class="form-group">
-                <label for="title">{{$title}}</label>
-                <input name="title" type="text" class="form-control">
+                <label for="title"></label>
+                <input name="title" type="text" class="form-control" value="{{$posts->title}}">
 
 
             </div>
         <br/>
             <div class="form-group">
-                <label for="body">{{$description}}</label>
-                <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+                <label for="body"></label>
+                <textarea name="description" id="" cols="30" rows="10" class="form-control" value="{{$posts->description}}"></textarea>
 
             </div>
 

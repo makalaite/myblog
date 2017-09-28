@@ -101,8 +101,7 @@ class MyPostsController extends Controller {
 	public function edit($id)
 	{
 		$posts = MyPosts::find($id);
-
-        return view('blog.edit', ['posts'=> $posts]);
+        return view('blog.edit', $posts);
 	}
 
 	/**
